@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+
+    <style>
+        .alerta {
+            font-size: 10px;
+            color: red;
+            line-height: 1;
+            margin: 2px 0px 5px 0px;
+            height: 10px;
+        }
+
+        .alerta-geral {
+            color: red;
+            background-color: lightpink;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .containner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body id="cor">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/entregaProva/index.html">Voltar</a></li>
+                <li><a href="/entregaProva/GasolinaALcool/gas.html">Gasolina ou alcool</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Calcular o IMC</h1>
+    <hr>
+    <div class="containner">
+        <form id="form">
+            <div>
+                <input type="number" id="peso" placeholder="Adicione seu peso">
+                <p class="alerta alerta-peso"></p>
+            </div>
+            <div>
+                <input type="number" id="altura" placeholder="Adicione sua altura">
+                <p class="alerta alerta-altura"></p>
+            </div>
+        </form>
+        <button id="btnCalcular">Calcular</button>
+        <hr>
+        <textarea id="retorno" cols="30" rows="10"></textarea>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- Jacke
+Bruno -->
