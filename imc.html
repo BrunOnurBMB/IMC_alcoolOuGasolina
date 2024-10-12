@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alcool ou Gasolina</title>
+    <title>IMC</title>
+
     <style>
         .alerta {
             font-size: 10px;
@@ -31,51 +32,47 @@
             flex-direction: column;
             align-items: center;
         }
-
-        li {
+        li{
             list-style: none;
         }
-
-        ul {
+        ul{
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
     </style>
+
 </head>
 
 <body id="cor">
     <header>
         <nav>
             <ul>
-                <li><a href="/entregaProva/index.html">Voltar</a></li>
-                <li><a href="/entregaProva/IMC/imc.html">IMC</a></li>
+                <li><a href="./index.html">Voltar</a></li>
+                <li><a href="./gas.html">Gasolina ou alcool</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Alcool ou Gasolina</h1>
+    <h1>Calcular o IMC</h1>
+    <hr>
     <div class="containner">
         <form id="form">
             <div>
-                <input type="text" id="gasolina" placeholder="Gasolina">
-                <p class="alerta alerta-gasolina"></p>
+                <input type="number" id="peso" placeholder="Adicione seu peso">
+                <p class="alerta alerta-peso"></p>
             </div>
             <div>
-                <input type="text" id="alcool" placeholder="Alcool">
-                <p class="alerta alerta-alcool"></p>
+                <input type="number" id="altura" placeholder="Adicione sua altura">
+                <p class="alerta alerta-altura"></p>
             </div>
         </form>
-        <button id="btnVerificar">Verificar</button>
+        <button id="btnCalcular">Calcular</button>
         <hr>
-        <div>
-            <textarea id="txtArea" cols="30" rows="10"></textarea>
-        </div>
+        <textarea id="retorno" cols="30" rows="10"></textarea>
     </div>
 
+    <script src="./IMC/script.js"></script>
 
-
-
-    <script src="./app.js"></script>
 </body>
 
 </html>
